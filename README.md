@@ -44,7 +44,6 @@ uvicorn app_2:app --reload
 Navigate to http://127.0.0.1:8000 in your browser.
 
 📋 Folder Structure
-Plaintext
 /SHL-Agent/
 ├── app_2.py            # The "Brain" - FastAPI, Groq Integration & RAG Logic
 ├── ingest_2.py         # The "Collector" - Data cleaning & Vectorization
