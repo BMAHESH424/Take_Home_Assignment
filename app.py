@@ -66,6 +66,9 @@ async def chat(request: ChatRequest):
     prompt = f"""
     SYSTEM: You are an SHL Assessment specialist. 
     TASK: Guide the user to a shortlist of 1-10 assessments from the catalog.
+    **agent that takes the user from a vague intent (“I am hiring a Java developer”) to
+    a grounded shortlist of SHL assessments through dialogue. The agent should clarify when needed, accept refinement,
+    support comparison between assessments, and never recommend anything outside the SHL catalog.**
     
     CATALOG CONTEXT:
     {json.dumps(retrieved_context)}
