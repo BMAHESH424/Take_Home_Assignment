@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHL Assessment Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <header class="app-header">
+            <div class="logo">SHL Labs <span class="tag">AI Agent</span></div>
+            <div class="status-indicator">
+                <span id="health-dot" class="dot"></span>
+                <span id="health-text">System Ready</span>
+            </div>
+        </header>
+
+        <main id="chat-box" class="chat-display">
+            <div class="msg bot">
+                Hello! I am your SHL Assessment Guide. I can help you find the right tests from our catalog. What role or skills are you hiring for?
+            </div>
+        </main>
+
+        <footer class="input-container">
+            <div class="input-group">
+                <input type="text" id="user-input" placeholder="Hiring a Java developer..." aria-label="User Message">
+                <button onclick="sendMessage()" id="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                </button>
+            </div>
+            <p class="disclaimer">Powered by SHL Labs RAG Engine. Recommendations restricted to Individual Test Solutions.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
